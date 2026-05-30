@@ -34,6 +34,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Terjadi kesalahan pada server!' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server berjalan di port ${PORT}`);
-});
+module.exports = app;
